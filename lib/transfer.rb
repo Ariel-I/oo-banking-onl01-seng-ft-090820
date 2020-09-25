@@ -15,7 +15,9 @@ class Transfer
       true 
     else 
       false 
-    end 
+    end
+    @sender && @receiver
   end 
+  
   
 end
