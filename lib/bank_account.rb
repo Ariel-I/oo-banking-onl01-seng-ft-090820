@@ -10,7 +10,8 @@ def initialize(name)
   @status = "open"
 end
 
-def deposit
+def deposit(deposit=[])
+  @bank_account << deposit
   
 end 
 
