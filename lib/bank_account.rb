@@ -11,7 +11,7 @@ def initialize(name)
 end
 
 def deposit(deposit)
-  @bank_account += deposit
+  @balance += deposit
 end 
 
 def display_balance(balance)
