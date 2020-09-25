@@ -15,9 +15,9 @@ class Transfer
   end 
   
   def execute_transaction
-    if valid? && sender.balance > amount && status = "open"
-      sender.withdraw(amount)
-      receiver.deposit(amount)
+    if valid? && sender.balance > @amount && status = "open"
+      sender.withdraw(@amount)
+      receiver.deposit(@amount)
       self.status = "complete"
     else
       self.status = "rejected"
