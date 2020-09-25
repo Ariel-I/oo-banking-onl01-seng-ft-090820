@@ -19,7 +19,8 @@ class Transfer
       sender.withdraw(@amount)
       receiver.deposit(@amount)
       @status = "complete"
-    elsif 
+    else
+        @sender != valid
        self.status = "rejected"
       "Transaction rejected. Please check your account balance."
     end
