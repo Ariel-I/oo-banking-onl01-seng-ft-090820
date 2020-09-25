@@ -9,12 +9,12 @@ def initialize(name)
   @status = "open"
 end
 
-def deposit(deposit)
-  @balance += deposit
+def deposit(amount)
+  @balance += amount
 end 
 
-def withdraw(withdraw)
-  @balance -= withdraw
+def withdraw(amount)
+  @balance -= amount
 end 
 
 def display_balance
