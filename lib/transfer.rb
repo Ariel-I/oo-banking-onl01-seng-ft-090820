@@ -31,7 +31,8 @@ class Transfer
       receiver.withdraw(self.amount)
       self.status = "reverse"
     else 
-      self.status = 
+      self.status = "rejected"
+      "Transaction rejected. Please check your account balance."
   end
   
 end
