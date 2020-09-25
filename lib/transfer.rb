@@ -13,7 +13,7 @@ attr_accessor :sender, :receiver, :amount, :status
 
   def execute_transaction
     if valid? && sender.balance > amount && self.status == "pending"
-      sender.withdrawal(self.amount)
+      sender.withdraw(self.amount)
       receiver.deposit(self.amount)
       self.status = "complete"
     else
@@ -25,7 +25,7 @@ attr_accessor :sender, :receiver, :amount, :status
   def reverse_transfer
     if valid? && receiver.balance > amount && self.status == "complete"
       sender.deposit(self.amount)
-      receiver.withdrawal(self.amount)
+      receiver.withdraw(self.amount)
       self.status = "reversed"
     else
       self.status = "rejected"
