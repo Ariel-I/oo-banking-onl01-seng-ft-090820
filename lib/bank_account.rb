@@ -8,6 +8,25 @@ def initialize(name)
   @bank_account = bank_account
   @balance = 1000
   @status = "open"
+end
+
+def deposit
+end 
+
+def display_balance
+  print balance 
+end 
+
+def valid?
+  if @status == "open"
+    balance > 0 
+    true 
+  else 
+    false 
+end
+
+def close_account
+  BankAccount.delete 
 end 
 
 end
