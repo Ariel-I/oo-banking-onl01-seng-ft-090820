@@ -18,8 +18,7 @@ def display_balance(balance)
 end 
 
 def valid?
-  if @status == "open"
-    balance > 0 
+  if @status == "open" && balance > 0 
     true 
   else 
     false 
@@ -27,7 +26,7 @@ def valid?
 end
 
 def close_account
-  BankAccount.delete 
+  BankAccount.clear 
 end 
 
 end
