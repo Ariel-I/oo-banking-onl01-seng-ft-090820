@@ -27,9 +27,8 @@ def valid?
 end
 
 def close_account(close)
-   if @status == "open"
-     bank_account.clear
-   end 
+   
+   
 end 
 
 end
