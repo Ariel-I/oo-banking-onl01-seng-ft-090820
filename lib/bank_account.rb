@@ -11,7 +11,7 @@ def initialize(name)
 end
 
 def deposit(deposit)
-  @bank_account 
+  @bank_account += deposit
   
 end 
 
