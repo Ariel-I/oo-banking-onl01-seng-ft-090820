@@ -11,10 +11,12 @@ def initialize(name)
 end
 
 def deposit
+  
 end 
 
 def display_balance(balance)
-  "Your balance is $#{balance}."
+  @balance == balance
+  "Your balance is $#{balance}"
 end 
 
 def valid?
