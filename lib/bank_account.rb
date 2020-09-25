@@ -14,7 +14,7 @@ def deposit(deposit)
   @balance += deposit
 end 
 
-def display_balance(balance)
+def display_balance
  p "Your balance is $#{self.balance}."
 end 
 
