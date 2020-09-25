@@ -10,8 +10,8 @@ def initialize(name)
   @status = "open"
 end
 
-def deposit(deposit=[])
-  @bank_account << deposit
+def deposit(deposit)
+  @bank_account 
   
 end 
 
