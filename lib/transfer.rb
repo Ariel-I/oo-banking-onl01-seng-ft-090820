@@ -31,6 +31,7 @@ class Transfer
       receiver.withdraw(@amount)
       @status = "reversed"
     else
+      valid?
       @status = "rejected"
       "Transaction rejected. Please check your account balance."      
     end
