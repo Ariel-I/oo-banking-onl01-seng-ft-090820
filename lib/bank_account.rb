@@ -13,8 +13,8 @@ end
 def deposit
 end 
 
-def display_balance
-  print balance 
+def display_balance(balance)
+  "Your balance is $#{balance}."
 end 
 
 def valid?
