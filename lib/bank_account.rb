@@ -15,7 +15,7 @@ def deposit(deposit)
 end 
 
 def display_balance(balance)
-  "Your balance is $#{self.balance}."
+ puts "Your balance is $#{self.balance}."
 end 
 
 def valid?
