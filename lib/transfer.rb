@@ -14,12 +14,11 @@ class Transfer
   end 
   
   def execute_transaction
-    if valid? && sender.balance > amount && @status == "pending"
+    if @sender.valid? && sender.balance > amount && @status == "pending"
       sender.withdraw(@amount)
       receiver.deposit(@amount)
       @status = "complete"
     else
-        @sender != valid?
        self.status = "rejected"
       "Transaction rejected. Please check your account balance."
     end
