@@ -27,7 +27,7 @@ def valid?
 end
 
 def close_account
-   
+   @bank_account.clear
 end 
 
 end
